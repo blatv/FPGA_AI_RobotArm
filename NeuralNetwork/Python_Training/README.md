@@ -1,0 +1,2 @@
+# Training of the Neural Network
+The two python scripts found in this folder have not been created during this project. They have been implemented and edited for this specific purpose. For more information regarding ownership, please view the original code at: [https://github.com/nhma20/FPGA_AI/tree/main]

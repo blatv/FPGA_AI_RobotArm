@@ -1,0 +1,51 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'thomas' on host 'thomas-ASUS-TUF-Gaming-A15-FA506IV-FX506IV' (Linux_x86_64 version 5.15.0-89-generic) on Fri Dec 29 14:00:32 CET 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/thomas/Desktop/ES/miniProject/HLS_project'
+Sourcing Tcl script '/home/thomas/Desktop/ES/miniProject/HLS_project/NN/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project NN 
+INFO: [HLS 200-10] Opening project '/home/thomas/Desktop/ES/miniProject/HLS_project/NN'.
+INFO: [HLS 200-1510] Running: set_top nn_inference 
+INFO: [HLS 200-1510] Running: add_files ../build_tools/FPGA_AI/src/hls/matmul.hpp 
+INFO: [HLS 200-10] Adding design file '../build_tools/FPGA_AI/src/hls/matmul.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../build_tools/FPGA_AI/src/hls/matmul.cpp 
+INFO: [HLS 200-10] Adding design file '../build_tools/FPGA_AI/src/hls/matmul.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../build_tools/FPGA_AI/src/hls/matmul_tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../build_tools/FPGA_AI/src/hls/matmul_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/thomas/Desktop/ES/miniProject/HLS_project/NN/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/thomas/Desktop/IP/nn_inference.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/thomas/Desktop/IP/nn_inference.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name nn_inference nn_inference 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../build_tools/FPGA_AI/src/hls/matmul.cpp in debug mode
+   Generating csim.exe
+
+NN Prediction: 2
+
+
+NN Prediction: 0
+
+
+NN Prediction: 1
+
+
+NN Prediction: 1
+
+
+NN Prediction: 0
+
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 19.07 seconds. CPU system time: 0.75 seconds. Elapsed time: 19.9 seconds; current allocated memory: 191.641 MB.

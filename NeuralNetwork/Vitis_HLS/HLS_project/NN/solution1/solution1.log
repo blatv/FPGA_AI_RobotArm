@@ -1,0 +1,792 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name nn_inference nn_inference 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.355 MB.
+INFO: [HLS 200-10] Analyzing design file '../build_tools/FPGA_AI/src/hls/matmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 24.11 seconds. CPU system time: 0.82 seconds. Elapsed time: 25.05 seconds; current allocated memory: 192.586 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-188] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:25:13) in function 'hwmm_layer1' partially with a factor of 2 (../build_tools/FPGA_AI/src/hls/matmul.cpp:25:13)
+INFO: [HLS 214-178] Inlining function 'float_to_fixed(float*, ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer1(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer1(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer2(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer2(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer3(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer3(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer4(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer4(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 16.67 seconds. CPU system time: 0.89 seconds. Elapsed time: 17.67 seconds; current allocated memory: 195.181 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.182 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 208.924 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:897: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 226.290 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_5_1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:5) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:23) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:92) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:42) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:107) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:57) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:120) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:74) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:137) in function 'nn_inference' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:57) in function 'nn_inference' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:74) in function 'nn_inference' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:59) in function 'nn_inference' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:76) in function 'nn_inference' completely with a factor of 16.
+INFO: [XFORM 203-102] Partitioning array 'temp_output.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:162) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output2.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:163) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output3.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:164) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output4.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights::layer4_weights.V' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights::layer3_weights.V' in dimension 1 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.4' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.5' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.6' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.7' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.8' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.9' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.10' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.11' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.12' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.13' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.14' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.15' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'temp_output4.V.0' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.4' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.5' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.6' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.7' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.8' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.9' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.10' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.11' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.12' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.13' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.14' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.15' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp_output4.V.0' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../build_tools/FPGA_AI/src/hls/matmul.cpp:5:26) in function 'nn_inference'... converting 10 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:94:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:109:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:122:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../build_tools/FPGA_AI/src/hls/matmul.cpp:166:18) to (../build_tools/FPGA_AI/src/hls/matmul.cpp:179:2) in function 'nn_inference'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.93 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.95 seconds; current allocated memory: 270.488 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:21:19) in function 'nn_inference' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:40:19) in function 'nn_inference'.
+INFO: [HLS 200-472] Inferring partial write operation for 'fp_input_img.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'fp_input_img.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:6:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:29:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:95:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:110:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output3[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output3[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:123:17)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.59 seconds. CPU system time: 0 seconds. Elapsed time: 0.6 seconds; current allocated memory: 278.461 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nn_inference' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'fp_input_img_V'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_5_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_5_1'
+INFO: [SCHED 204-61] Pipelining loop 'prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'prod'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col_prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'col_prod'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20, loop 'col'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'col'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.64 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.69 seconds; current allocated memory: 281.743 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.87 seconds. CPU system time: 0 seconds. Elapsed time: 0.86 seconds; current allocated memory: 285.833 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_inference/input_img' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nn_inference' to 'ap_ctrl_hs'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/thomas/Desktop/IP/nn_inference.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/thomas/Desktop/IP/nn_inference.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name nn_inference nn_inference 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.580 MB.
+INFO: [HLS 200-10] Analyzing design file '../build_tools/FPGA_AI/src/hls/matmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 23.69 seconds. CPU system time: 0.69 seconds. Elapsed time: 24.34 seconds; current allocated memory: 192.806 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-188] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:25:13) in function 'hwmm_layer1' partially with a factor of 2 (../build_tools/FPGA_AI/src/hls/matmul.cpp:25:13)
+INFO: [HLS 214-178] Inlining function 'float_to_fixed(float*, ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer1(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer1(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer2(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer2(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer3(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer3(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer4(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer4(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 16.68 seconds. CPU system time: 0.87 seconds. Elapsed time: 17.65 seconds; current allocated memory: 195.415 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.416 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 209.158 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:897: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 226.523 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_5_1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:5) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:23) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:92) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:42) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:107) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:57) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:120) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:74) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:137) in function 'nn_inference' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:57) in function 'nn_inference' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:74) in function 'nn_inference' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:59) in function 'nn_inference' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:76) in function 'nn_inference' completely with a factor of 16.
+INFO: [XFORM 203-102] Partitioning array 'temp_output.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:162) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output2.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:163) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output3.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:164) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output4.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights::layer4_weights.V' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights::layer3_weights.V' in dimension 1 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.4' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.5' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.6' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.7' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.8' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.9' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.10' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.11' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.12' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.13' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.14' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.15' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'temp_output4.V.0' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.4' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.5' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.6' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.7' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.8' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.9' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.10' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.11' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.12' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.13' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.14' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.15' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp_output4.V.0' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../build_tools/FPGA_AI/src/hls/matmul.cpp:5:26) in function 'nn_inference'... converting 10 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:94:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:109:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:122:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../build_tools/FPGA_AI/src/hls/matmul.cpp:166:18) to (../build_tools/FPGA_AI/src/hls/matmul.cpp:179:2) in function 'nn_inference'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.92 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.94 seconds; current allocated memory: 270.716 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:21:19) in function 'nn_inference' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:40:19) in function 'nn_inference'.
+INFO: [HLS 200-472] Inferring partial write operation for 'fp_input_img.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'fp_input_img.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:6:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:29:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:95:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:110:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output3[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output3[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:123:17)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.59 seconds. CPU system time: 0 seconds. Elapsed time: 0.6 seconds; current allocated memory: 278.722 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nn_inference' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'fp_input_img_V'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_5_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_5_1'
+INFO: [SCHED 204-61] Pipelining loop 'prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'prod'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col_prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'col_prod'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20, loop 'col'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'col'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.66 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.67 seconds; current allocated memory: 282.003 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.91 seconds. CPU system time: 0 seconds. Elapsed time: 0.92 seconds; current allocated memory: 286.092 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/thomas/Desktop/IP/nn_inference.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/thomas/Desktop/IP/nn_inference.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name nn_inference nn_inference 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.580 MB.
+INFO: [HLS 200-10] Analyzing design file '../build_tools/FPGA_AI/src/hls/matmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 23.69 seconds. CPU system time: 0.83 seconds. Elapsed time: 24.37 seconds; current allocated memory: 192.806 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'float_to_fixed(float*, ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer1(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer1(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer2(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer2(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer3(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer3(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer4(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer4(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 16.75 seconds. CPU system time: 0.81 seconds. Elapsed time: 17.68 seconds; current allocated memory: 195.365 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.366 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 209.024 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:897: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 226.414 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_5_1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:5) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:23) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:92) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:42) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:107) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:57) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:120) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:74) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:137) in function 'nn_inference' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:57) in function 'nn_inference' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:74) in function 'nn_inference' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:59) in function 'nn_inference' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:76) in function 'nn_inference' completely with a factor of 16.
+INFO: [XFORM 203-102] Partitioning array 'temp_output.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:162) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output2.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:163) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output3.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:164) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output4.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights::layer4_weights.V' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights::layer3_weights.V' in dimension 1 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.4' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.5' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.6' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.7' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.8' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.9' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.10' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.11' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.12' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.13' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.14' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.15' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'temp_output4.V.0' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.4' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.5' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.6' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.7' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.8' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.9' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.10' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.11' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.12' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.13' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.14' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.15' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp_output4.V.0' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../build_tools/FPGA_AI/src/hls/matmul.cpp:5:26) in function 'nn_inference'... converting 10 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:94:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:109:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:122:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../build_tools/FPGA_AI/src/hls/matmul.cpp:166:18) to (../build_tools/FPGA_AI/src/hls/matmul.cpp:179:2) in function 'nn_inference'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.78 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.79 seconds; current allocated memory: 270.398 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:21:19) in function 'nn_inference'.
+INFO: [XFORM 203-541] Flattening a loop nest 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:40:19) in function 'nn_inference'.
+INFO: [HLS 200-472] Inferring partial write operation for 'fp_input_img.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'fp_input_img.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:6:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:29:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:95:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:110:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output3[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output3[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:123:17)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.52 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.54 seconds; current allocated memory: 278.585 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nn_inference' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_5_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_5_1'
+INFO: [SCHED 204-61] Pipelining loop 'col_prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'col_prod'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col_prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'col_prod'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20, loop 'col'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'col'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.59 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.61 seconds; current allocated memory: 281.832 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.8 seconds. CPU system time: 0 seconds. Elapsed time: 0.8 seconds; current allocated memory: 285.873 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_inference/input_img' to 'ap_memory'.
+INFO==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/thomas/Desktop/IP/nn_inference.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/thomas/Desktop/IP/nn_inference.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name nn_inference nn_inference 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 191.580 MB.
+INFO: [HLS 200-10] Analyzing design file '../build_tools/FPGA_AI/src/hls/matmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 24.09 seconds. CPU system time: 0.72 seconds. Elapsed time: 24.87 seconds; current allocated memory: 192.807 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'float_to_fixed(float*, ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer1(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer1(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer2(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer2(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer3(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer3(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer4(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer4(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 16.77 seconds. CPU system time: 0.83 seconds. Elapsed time: 17.69 seconds; current allocated memory: 195.365 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.366 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 209.024 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:897: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 226.417 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_5_1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:5) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:23) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:92) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:42) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:107) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:57) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:120) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:74) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:137) in function 'nn_inference' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:57) in function 'nn_inference' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:74) in function 'nn_inference' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:59) in function 'nn_inference' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:76) in function 'nn_inference' completely with a factor of 16.
+INFO: [XFORM 203-102] Partitioning array 'temp_output.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:162) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output2.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:163) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output3.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:164) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output4.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights::layer4_weights.V' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights::layer3_weights.V' in dimension 1 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.4' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.5' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.6' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.7' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.8' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.9' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.10' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.11' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.12' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.13' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.14' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.15' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'temp_output4.V.0' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.4' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.5' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.6' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.7' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.8' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.9' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.10' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.11' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.12' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.13' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.14' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.15' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp_output4.V.0' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../build_tools/FPGA_AI/src/hls/matmul.cpp:5:26) in function 'nn_inference'... converting 10 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:94:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:109:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:122:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../build_tools/FPGA_AI/src/hls/matmul.cpp:166:18) to (../build_tools/FPGA_AI/src/hls/matmul.cpp:179:2) in function 'nn_inference'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.81 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.84 seconds; current allocated memory: 270.401 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:21:19) in function 'nn_inference'.
+INFO: [XFORM 203-541] Flattening a loop nest 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:40:19) in function 'nn_inference'.
+INFO: [HLS 200-472] Inferring partial write operation for 'fp_input_img.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'fp_input_img.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:6:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:29:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:95:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:110:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output3[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output3[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:123:17)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.53 seconds. CPU system time: 0 seconds. Elapsed time: 0.53 seconds; current allocated memory: 278.599 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nn_inference' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_5_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_5_1'
+INFO: [SCHED 204-61] Pipelining loop 'col_prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'col_prod'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col_prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'col_prod'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20, loop 'col'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'col'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.63 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.64 seconds; current allocated memory: 281.830 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.81 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.82 seconds; current allocated memory: 285.869 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_inference/input_img' to 'ap_memory'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/thomas/Desktop/IP/nn_inference.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/thomas/Desktop/IP/nn_inference.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name nn_inference nn_inference 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.571 MB.
+INFO: [HLS 200-10] Analyzing design file '../build_tools/FPGA_AI/src/hls/matmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 22.98 seconds. CPU system time: 0.61 seconds. Elapsed time: 23.63 seconds; current allocated memory: 192.774 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'float_to_fixed(float*, ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer1(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer1(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer2(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [80], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer2(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer3(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [32], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer3(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hwmm_layer4(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [16], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 214-178] Inlining function 'hw_act_layer4(ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'nn_inference(float*)' (../build_tools/FPGA_AI/src/hls/matmul.cpp:153:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 16.88 seconds. CPU system time: 0.88 seconds. Elapsed time: 17.8 seconds; current allocated memory: 195.364 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.366 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 209.057 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:897: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 226.452 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_5_1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:5) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:23) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:92) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:42) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:107) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:57) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:120) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:74) in function 'nn_inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (../build_tools/FPGA_AI/src/hls/matmul.cpp:137) in function 'nn_inference' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:57) in function 'nn_inference' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:74) in function 'nn_inference' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:59) in function 'nn_inference' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'prod' (../build_tools/FPGA_AI/src/hls/matmul.cpp:76) in function 'nn_inference' completely with a factor of 16.
+INFO: [XFORM 203-102] Partitioning array 'temp_output.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:162) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output2.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:163) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output3.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:164) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp_output4.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights::layer4_weights.V' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights::layer3_weights.V' in dimension 1 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.4' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.5' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.6' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.7' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.8' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.9' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.10' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.11' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.12' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.13' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.14' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'weights::layer4_weights.V.15' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'temp_output4.V.0' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.4' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.5' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.6' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.7' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.8' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.9' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.10' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.11' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.12' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.13' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.14' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights::layer4_weights.V.15' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp_output4.V.0' (../build_tools/FPGA_AI/src/hls/matmul.cpp:165) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../build_tools/FPGA_AI/src/hls/matmul.cpp:5:26) in function 'nn_inference'... converting 10 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:94:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:109:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../build_tools/FPGA_AI/src/hls/matmul.cpp:122:7) in function 'nn_inference'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../build_tools/FPGA_AI/src/hls/matmul.cpp:166:18) to (../build_tools/FPGA_AI/src/hls/matmul.cpp:179:2) in function 'nn_inference'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.83 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.87 seconds; current allocated memory: 270.429 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:21:19) in function 'nn_inference'.
+INFO: [XFORM 203-541] Flattening a loop nest 'col' (../build_tools/FPGA_AI/src/hls/matmul.cpp:40:19) in function 'nn_inference'.
+INFO: [HLS 200-472] Inferring partial write operation for 'fp_input_img.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'fp_input_img.V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:6:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:29:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:95:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:110:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output3[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_output3[0].V' (../build_tools/FPGA_AI/src/hls/matmul.cpp:123:17)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.56 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.57 seconds; current allocated memory: 278.620 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nn_inference' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_5_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_5_1'
+INFO: [SCHED 204-61] Pipelining loop 'col_prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'col_prod'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col_prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'col_prod'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20, loop 'col'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'loop1'
+INFO: [SCHED 204-61] Pipelining loop 'col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'col'
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.61 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.62 seconds; current allocated memory: 281.852 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.84 seconds. CPU system time: 0 seconds. Elapsed time: 0.84 seconds; current allocated memory: 285.891 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_inference/input_img' to 'ap_memory'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

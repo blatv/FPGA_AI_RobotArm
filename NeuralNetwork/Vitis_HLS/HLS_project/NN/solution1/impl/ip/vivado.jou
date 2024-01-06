@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 21 15:54:49 2023
+# Process ID: 38947
+# Current directory: /home/thomas/Desktop/ES/miniProject/HLS_project/NN/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/thomas/Desktop/ES/miniProject/HLS_project/NN/solution1/impl/ip/vivado.log
+# Journal file: /home/thomas/Desktop/ES/miniProject/HLS_project/NN/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

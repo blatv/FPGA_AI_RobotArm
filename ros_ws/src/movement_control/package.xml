@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<?xml-model href='http://download.ros.org/schema/package_format3.xsd' schematypens='http://www.w3.org/2001/XMLSchema'?>
+<!-- This file is created for movement_control using the 'package_generator' based on a configuration file.
+     WARNING: this file is overwritten during package generation!-->
+<package format='3'>
+    <name>movement_control</name>
+    <version>0.0.0</version>
+    <description>This node will control the robotic arm, as well as send the images of the camera.</description>
+    <maintainer email='thomas.vandersterren@gmail.com'>Thomas van der Sterren</maintainer>
+    <license>TODO</license>
+    <test_depend>ament_copyright</test_depend>
+    <test_depend>ament_flake8</test_depend>
+    <test_depend>ament_pep257</test_depend>
+    <exec_depend>sensor_msgs</exec_depend>
+    <exec_depend>std_msgs</exec_depend>
+    <export>
+        <build_type>ament_python</build_type>
+    </export>
+</package>

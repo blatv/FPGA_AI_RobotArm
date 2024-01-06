@@ -1,0 +1,24 @@
+package_type = "functional"  # DO NOT EDIT THIS LINE
+node_name = "movement_control"
+package_description = "This node will control the robotic arm, as well as send the images of the camera."
+license_declaration = "TODO"
+maintainer_name = "Thomas van der Sterren"
+maintainer_email = "thomas.vandersterren@gmail.com"
+
+########################## ROS dependencies ####################################
+# A dependency is added as shown below.
+# [[dependency]]
+# type = "message"/"service"/"action"
+# name = "String"
+# package = "std_msgs"
+
+[[dependency]]
+type = "message"
+name = "Image"
+package = "sensor_msgs"
+
+[[dependency]]
+type = "message"
+name = "float32"
+package = "std_msgs"
+
