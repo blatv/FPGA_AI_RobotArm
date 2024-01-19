@@ -6,6 +6,9 @@ This video offers a comprehensive view of the scene created for capturing synthe
 
 [Watch the Unity Scene Overview Video](https://drive.google.com/file/d/1fyBK8RIs-3E3kKyq0fPRtn8AGrTsgb26/view?usp=sharing)
 
+# Python NN Learning
+The QVideo_learning_NN_python is a tiny video showing how fast the learning process goes.
+
 # Pose Estimation Calculation and testing
 The pose estimation calculation and testing can be observed in the following video:
 
