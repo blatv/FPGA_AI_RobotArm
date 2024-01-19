@@ -1,2 +1,2 @@
 # Pose Estimation
-The pose estimation is done using ......[Lots of info]......
+In order to align the end effector with the current piece it is necessary to calculate the relative angle between them. For doing that the class angle_calculation_class has been created. Within this class 3 different methods are used for the calculation of the relative angle depending on the piece. The python library Opencv was used for the different processing methods.
