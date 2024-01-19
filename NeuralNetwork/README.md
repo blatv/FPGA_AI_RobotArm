@@ -1,5 +1,8 @@
 # The Neural Network
 
+The neural network design looks as followed:
+![Neural Network](/Report/Images/NeuroNetDesign.png?raw=true "Neural Network")
+
 ## Training
 The training was done in Python using the TensorFolow library
 

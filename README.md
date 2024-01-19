@@ -3,7 +3,7 @@ This repository contains the code, designs and demonstrations for an Embedded Sy
 
 The project consists of the following architecture:
 
-{Insert image overview here}
+![Schematic overview of Architecture](/Report/Images/FPGA-NN-Schematic.png?raw=true "Schematic overview of Architecture")
 
 The different components can be found throughout this repo.
 
